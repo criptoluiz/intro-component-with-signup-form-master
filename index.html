@@ -27,17 +27,30 @@
   <div class="form">
     <div class="try-box"><p><em>Try it free 7 days</em> then $20/mo. thereafter</p></div>
   
-  <form id="form">
+  <form id="form" action="#">
   <input class="form-input" id="firstName" type="text" name="firstName" placeholder="First Name">
-  <input class="form-input" id="lastName" type="text" name="lastName" placeholder="Last Name">
-  <input class="form-input" id="email" type="email" name="email" placeholder="Email Address">
-  <input class="form-input" id="password" type="password" name="password" placeholder="Password">
+  <img id="danger-firstname" src="images/icon-error.svg" alt="danger-popup">
+  <p class="error" id="error-firstname">First Name cannot be empty</p>
 
-  <button type="submit">CLAIM YOUR FREE TRIAL</button><br>
+  <input class="form-input" id="lastName" type="text" name="lastName" placeholder="Last Name">
+  <img id="danger-lastname" src="images/icon-error.svg" alt="danger-popup">
+  <p class="error" id="error-lastname">Last Name cannot be empty</p>
+
+  <input class="form-input" id="email" type="email" name="email" placeholder="Email Address">
+  <img id="danger-email" src="images/icon-error.svg" alt="danger-popup">
+  <p class="error" id="error-email">Looks like this is not an email</p>
+
+  <input class="form-input" id="password" type="password" name="password" placeholder="Password">
+  <img id="danger-password" src="images/icon-error.svg" alt="danger-popup">
+  <p class="error" id="error-password">Password cannot be empty</p>
+
+  <button type="submit">CLAIM YOUR FREE TRIAL</button>
 
   <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
   </form>
 </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
